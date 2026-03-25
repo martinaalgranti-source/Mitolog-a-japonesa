@@ -1,62 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi primera web</title>
+<meta charset="UTF-8">
+<title>Shinwa</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
 
-    header {
-      background: #222;
-      padding: 20px;
-      font-size: 24px;
-      letter-spacing: 2px;
-    }
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background: black;
+  font-size: 14px;
+}
 
-    .contenedor {
-      padding: 40px;
-    }
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    button {
-      padding: 10px 20px;
-      background: #ff3c00;
-      border: none;
-      color: white;
-      cursor: pointer;
-      margin-top: 20px;
-    }
+.hero h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
 
-    button:hover {
-      background: #ff6a3d;
-    }
-  </style>
+.hero p {
+  max-width: 500px;
+  margin: auto;
+  color: #ccc;
+}
+
+/* SECCIONES */
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #333;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* MAPA */
+.mapa {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid #333;
+  padding: 15px;
+  flex: 1;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  font-size: 12px;
+  color: gray;
+}
+</style>
+
 </head>
 
 <body>
 
-  <header>
-    MI WEB MEDIO PELO 🔥
-  </header>
+<nav>
+  <div>Inicio</div>
+  <div>Shinwa</div>
+  <div>Kami</div>
+  <div>Sekai</div>
+  <div>Yomi</div>
+</nav>
 
-  <div class="contenedor">
-    <h1>Hola 👀</h1>
-    <p>Esto es una web simple hecha en 2 minutos</p>
+<section class="hero">
+  <h1>SHINWA</h1>
+  <p>Explora el mundo de la mitología japonesa. Dioses, espíritus y criaturas que habitan entre la naturaleza y lo invisible.</p>
+</section>
 
-    <button onclick="cambiarTexto()">tocame</button>
+<section class="section">
+  <h2>Introducción</h2>
+  <p>
+    La mitología japonesa reúne relatos y creencias que explican el origen del mundo,
+    la naturaleza y la vida humana. A través de los kami, espíritus que habitan en todas
+    las cosas, lo divino y lo cotidiano conviven constantemente.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Dioses principales</h2>
+  <div class="grid">
+    <div class="card">Amaterasu</div>
+    <div class="card">Susanoo</div>
+    <div class="card">Tsukuyomi</div>
+    <div class="card">Izanami</div>
   </div>
+</section>
 
-  <script>
-    function cambiarTexto() {
-      document.querySelector("h1").innerText = "AHORA CAMBIÓ 😎";
-    }
-  </script>
+<section class="section">
+  <h2>Criaturas míticas</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Kitsune</h3>
+      <p>Zorros mágicos con inteligencia y poderes sobrenaturales.</p>
+    </div>
+    <div class="card">
+      <h3>Tengu</h3>
+      <p>Seres de montaña con forma humanoide.</p>
+    </div>
+    <div class="card">
+      <h3>Ryū</h3>
+      <p>Dios dragón del mar.</p>
+    </div>
+    <div class="card">
+      <h3>Kappa</h3>
+      <p>Criatura acuática traviesa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Mitos y relatos</h2>
+  <p>
+    Susanoo derrotó a la serpiente Yamata no Orochi emborrachándola con sake.
+    Dentro de su cuerpo encontró una espada legendaria.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Mapa mitológico</h2>
+  <div class="mapa">
+    <div class="box">
+      <h3>Kono Sekai</h3>
+      <p>Mundo de los humanos donde conviven espíritus.</p>
+    </div>
+    <div class="box">
+      <h3>Takamagahara</h3>
+      <p>Reino celestial de los dioses.</p>
+    </div>
+    <div class="box">
+      <h3>Yomi</h3>
+      <p>Inframundo de los muertos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <button onclick="alert('Quiz próximamente 👀')">QUIZ MITOLÓGICO</button>
+</section>
+
+<footer>
+  Shinwa - Enciclopedia de mitología japonesa
+</footer>
 
 </body>
 </html>
