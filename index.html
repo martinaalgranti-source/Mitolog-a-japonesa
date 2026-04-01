@@ -1,183 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Shinwa</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: white;
-}
-
-/* NAV */
-nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 15px;
-  background: black;
-  font-size: 14px;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h1 {
-  font-size: 50px;
-  letter-spacing: 5px;
-}
-
-.hero p {
-  max-width: 500px;
-  margin: auto;
-  color: #ccc;
-}
-
-/* SECCIONES */
-.section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* GRID */
-.grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  border: 1px solid #333;
-  padding: 20px;
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-}
-
-/* MAPA */
-.mapa {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.box {
-  border: 1px solid #333;
-  padding: 15px;
-  flex: 1;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-  font-size: 12px;
-  color: gray;
-}
-</style>
-
+  <meta charset="UTF-8">
+  <title>Mitología Japonesa</title>
 </head>
 
 <body>
 
-<nav>
-  <div>Inicio</div>
-  <div>Shinwa</div>
-  <div>Kami</div>
-  <div>Sekai</div>
-  <div>Yomi</div>
-</nav>
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="logo" width="180">
+    <h1>Mitología Japonesa</h1>
 
-<section class="hero">
-  <h1>SHINWA</h1>
-  <p>Explora el mundo de la mitología japonesa. Dioses, espíritus y criaturas que habitan entre la naturaleza y lo invisible.</p>
+    <nav id="secundario">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="dioses.html">Dioses</a></li>
+        <li><a href="criaturas.html">Criaturas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <img src="home.png" alt="imagen portada" width="60%">
+
+    <p>
+      La mitología japonesa explica el origen del mundo, la naturaleza y la vida. 
+      Habla de los kami, que son espíritus que viven en todas las cosas.
+    </p>
+
+    <section id="dioses">
+      <h2>Dioses principales</h2>
+      <p>Amaterasu</p>
+      <p>Susanoo</p>
+      <p>Izanami</p>
+      <p>Tsukuyomi</p>
+    </section>
+
+    <section id="criaturas">
+      <h2>Criaturas míticas</h2>
+      <p>Kitsune</p>
+      <p>Tengu</p>
+      <p>Ryujin</p>
+      <p>Yamami</p>
+    </section>
+
+    <section>
+      <h2>Historia: Amaterasu y la cueva</h2>
+      <p>
+        Amaterasu se escondió en una cueva después de pelear con su hermano. 
+        El mundo quedó en oscuridad. Los otros dioses hicieron un plan 
+        para que saliera y así volvió la luz.
+      </p>
+    </section>
+
+    <section>
+      <h2>Historia: Susanoo y la serpiente</h2>
+      <p>
+        Susanoo ayudó a una familia atacada por una serpiente gigante. 
+        La engañó con sake y la derrotó, salvando a la joven.
+      </p>
+    </section>
+
+    <section>
+      <h2>Lugares</h2>
+      <p>Yomi es el mundo de los muertos.</p>
+      <p>Takamagahara es el lugar donde viven los dioses.</p>
+    </section>
+<section id="quiz">
+
+  <h2>Quiz mitológico</h2>
+
+  <form>
+
+    <p>1. ¿Quién es la diosa del sol?</p>
+    <input type="radio" name="q1" value="amaterasu"> Amaterasu<br>
+    <input type="radio" name="q1" value="susanoo"> Susanoo<br>
+
+    <p>2. ¿Qué criatura es un zorro mágico?</p>
+    <input type="radio" name="q2" value="tengu"> Tengu<br>
+    <input type="radio" name="q2" value="kitsune"> Kitsune<br>
+
+    <p>3. ¿Dónde viven los dioses?</p>
+    <input type="radio" name="q3" value="yomi"> Yomi<br>
+    <input type="radio" name="q3" value="takamagahara"> Takamagahara<br>
+
+    <br>
+    <button>Enviar respuestas</button>
+
+  </form>
+
 </section>
+  </main>
 
-<section class="section">
-  <h2>Introducción</h2>
-  <p>
-    La mitología japonesa reúne relatos y creencias que explican el origen del mundo,
-    la naturaleza y la vida humana. A través de los kami, espíritus que habitan en todas
-    las cosas, lo divino y lo cotidiano conviven constantemente.
-  </p>
-</section>
-
-<section class="section">
-  <h2>Dioses principales</h2>
-  <div class="grid">
-    <div class="card">Amaterasu</div>
-    <div class="card">Susanoo</div>
-    <div class="card">Tsukuyomi</div>
-    <div class="card">Izanami</div>
+  <!-- FOOTER -->
+ <footer>
+ <img src="logo.png" alt="logo" width="140">
+  <div>
+    <p>Instagram</p>
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p>Whatsapp</p>
   </div>
-</section>
 
-<section class="section">
-  <h2>Criaturas míticas</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Kitsune</h3>
-      <p>Zorros mágicos con inteligencia y poderes sobrenaturales.</p>
-    </div>
-    <div class="card">
-      <h3>Tengu</h3>
-      <p>Seres de montaña con forma humanoide.</p>
-    </div>
-    <div class="card">
-      <h3>Ryū</h3>
-      <p>Dios dragón del mar.</p>
-    </div>
-    <div class="card">
-      <h3>Kappa</h3>
-      <p>Criatura acuática traviesa.</p>
-    </div>
+  <div>
+    <h3>Acerca de</h3>
+    <p>
+      Una enciclopedia digital dedicada a la mitología japonesa, 
+      donde se ofrece una mirada clara y accesible.
+    </p>
   </div>
-</section>
 
-<section class="section">
-  <h2>Mitos y relatos</h2>
-  <p>
-    Susanoo derrotó a la serpiente Yamata no Orochi emborrachándola con sake.
-    Dentro de su cuerpo encontró una espada legendaria.
-  </p>
-</section>
-
-<section class="section">
-  <h2>Mapa mitológico</h2>
-  <div class="mapa">
-    <div class="box">
-      <h3>Kono Sekai</h3>
-      <p>Mundo de los humanos donde conviven espíritus.</p>
-    </div>
-    <div class="box">
-      <h3>Takamagahara</h3>
-      <p>Reino celestial de los dioses.</p>
-    </div>
-    <div class="box">
-      <h3>Yomi</h3>
-      <p>Inframundo de los muertos.</p>
-    </div>
+  <div>
+    <h3>Explorar</h3>
+    <p>Origen del mundo</p>
+    <p>Leyendas de Kitsune</p>
+    <p>Espíritus y demonios</p>
+    <p>Personajes destacados</p>
   </div>
-</section>
 
-<section class="section" style="text-align:center;">
-  <button onclick="alert('Quiz próximamente 👀')">QUIZ MITOLÓGICO</button>
-</section>
+  <div>
+    <p>Aviso legal | Política de cookies | Términos</p>
+    <p>©️ 2026 Mitología Japonesa</p>
+  </div>
 
-<footer>
-  Shinwa - Enciclopedia de mitología japonesa
 </footer>
-
-</body>
-</html>
